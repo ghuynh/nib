@@ -7,6 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nib.Web", "Nib.Web", "{10E9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nib", "Nib.Web\Nib.csproj", "{AD215E2C-0D66-487E-ADFC-4BEB62432617}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C6BB20F8-9128-467E-83A8-F39B8E8E4928}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NibTest", "NibTest\NibTest.csproj", "{31BB82F5-1A78-4B22-826E-B788186610A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD215E2C-0D66-487E-ADFC-4BEB62432617} = {AD215E2C-0D66-487E-ADFC-4BEB62432617}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +24,17 @@ Global
 		{AD215E2C-0D66-487E-ADFC-4BEB62432617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD215E2C-0D66-487E-ADFC-4BEB62432617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD215E2C-0D66-487E-ADFC-4BEB62432617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BB82F5-1A78-4B22-826E-B788186610A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BB82F5-1A78-4B22-826E-B788186610A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BB82F5-1A78-4B22-826E-B788186610A7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{31BB82F5-1A78-4B22-826E-B788186610A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BB82F5-1A78-4B22-826E-B788186610A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AD215E2C-0D66-487E-ADFC-4BEB62432617} = {10E9AFCE-EF32-46FA-A0E0-94AC3D8FBB0A}
+		{31BB82F5-1A78-4B22-826E-B788186610A7} = {C6BB20F8-9128-467E-83A8-F39B8E8E4928}
 	EndGlobalSection
 EndGlobal
