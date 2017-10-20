@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Response } from '@angular/http';
 import { Router } from '@angular/router';
 import { TitleServices } from '../../services/services';
-
 @Component({
     selector: 'home',
     templateUrl: './home.component.html'
