@@ -14,7 +14,7 @@ namespace Nib.Controllers
         }
         public JsonResult Title()
         {
-            return Json("Hello World");
+            return Json("Hello");
         }
         public IActionResult Error()
         {
