@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpModule } from '@angular/http';
 import { sharedConfig } from './app.module.shared';
+import { TitleServices } from './services/services';
 
 @NgModule({
     bootstrap: sharedConfig.bootstrap,
@@ -14,8 +15,8 @@ import { sharedConfig } from './app.module.shared';
         ...sharedConfig.imports
     ],
     providers: [
-        { provide: 'ORIGIN_URL', useValue: location.origin }
-        
+        { provide: 'ORIGIN_URL', useValue: location.origin },
+        TitleServices
     ]
 })
 export class AppModule {

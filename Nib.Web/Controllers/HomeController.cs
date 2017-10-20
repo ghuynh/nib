@@ -12,7 +12,10 @@ namespace Nib.Controllers
         {
             return View();
         }
-
+        public JsonResult Title()
+        {
+            return Json("Hello World");
+        }
         public IActionResult Error()
         {
             return View();

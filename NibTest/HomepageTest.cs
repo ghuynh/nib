@@ -3,6 +3,8 @@ using Xunit;
 using System.Net;
 using System.Net.Http;
 using System.Xml;
+using Nib.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace NibTest
 {
@@ -13,17 +15,11 @@ namespace NibTest
         {
             using (HttpClient client = new HttpClient())
             {
-                using (HttpResponseMessage response = client.GetAsync("http://localhost:5000").Result)
-                {
-                    using (HttpContent content = response.Content)
-                    {
-                        string result = content.ReadAsStringAsync().Result;
-                        Assert.Contains("Hello World", result);
-                    }
-                }
-            }
-            
-          
+                var controller = new HomeController();
+                var result = controller.Title();
+                string title = (result != null) ? result.Value.ToString() : string.Empty;
+                Assert.Contains("Hello World", title);                
+            }                
         }
     }
 }
